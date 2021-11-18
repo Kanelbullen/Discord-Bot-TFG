@@ -109,5 +109,7 @@ async def on_message(message):
         elif user_message.lower() == '!mayonäs':
             webbrowser.open('https://www.youtube.com/watch?v=zo4OzT7wbb0')
             return
+        elif user_message.lower() == "!time":
+            await message.channel.send(f'')
 
 client.run(TOKEN)
